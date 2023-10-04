@@ -12,6 +12,36 @@
 
 ### Program:
 
+### Program To Create Table:
+```
+create table EMPLOYEE3 (empid NUMBER, empname VARCHAR(20), dept VARCHAR(10),salary NUMBER);
+```
+## Program To Create Procedure:
+```
+create or replace procedure insert_employee_data is
+begin
+insert into EMPLOYEE3 values(1,'vjis','IT',100000000);
+insert into EMPLOYEE3 values(2,'prabha','IoT',20000000);
+insert into EMPLOYEE3 values(3,'dhuru','IT',300000000);
+insert into EMPLOYEE3 values(4,'yuva','IoT',40000000);
+COMMIT;
+END;
+/
+```
+## Program To Call The Procedure:
+```
+execute insert_employee_data;
+```
+## Program To Display The Table:
+```
+select * from EMPLOYEE3;
+```
+
 ### Output:
+![image](https://github.com/svarsha220/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/127709117/5a618ea5-7269-488c-ae7a-4af4cbc6f78b)
+
+
 
 ### Result:
+Hence procedure has been created using PL/SQL.
+
