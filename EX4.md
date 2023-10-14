@@ -14,32 +14,32 @@
 
 ### Program To Create Table:
 ```
-create table EMPLOYEE3 (empid NUMBER, empname VARCHAR(20), dept VARCHAR(10),salary NUMBER);
+ CREATE TABLE employe(empid NUMBER,emoname VARCHAR(10),dept VARCHAR(10),salary NUMBER);
 ```
 ## Program To Create Procedure:
 ```
-create or replace procedure insert_employee_data is
-begin
-insert into EMPLOYEE3 values(1,'vjis','IT',100000000);
-insert into EMPLOYEE3 values(2,'prabha','IoT',20000000);
-insert into EMPLOYEE3 values(3,'dhuru','IT',300000000);
-insert into EMPLOYEE3 values(4,'yuva','IoT',40000000);
-COMMIT;
-END;
-/
+SQL>  create or replace procedure inserting_data is
+  2  begin
+  3  insert into employe values(1,'varsha','it',123000);
+  4  insert into employe values(2,'kiki','cs',12330);
+  5  insert into employe values(3,'dhivya','aids',12030);
+  6  insert into employe values(4,'shama','it',1203);
+  7  commit;
+  8  end;
+  9  /
 ```
 ## Program To Call The Procedure:
 ```
-execute insert_employee_data;
+ execute inserting_data;
 ```
 ## Program To Display The Table:
 ```
-select * from EMPLOYEE3;
+select * from employe;
 ```
 
 ### Output:
-![image](https://github.com/svarsha220/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/127709117/5a618ea5-7269-488c-ae7a-4af4cbc6f78b)
 
+![dbms 4 1](https://github.com/svarsha220/Ex-No-4-Creating-Procedures-using-PL-SQL/assets/127709117/5013222b-71f6-46b0-867a-d565a2a14d70)
 
 
 ### Result:
